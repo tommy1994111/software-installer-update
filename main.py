@@ -10,9 +10,9 @@ META_DATA = json.load(open(os.path.join(".", "meta.json"), "r"))
 CODE_DIRECTORY = os.path.join(".", "code")
 DOWNLOAD_DIRECTORY = os.path.join(".", "software")
 if platform.system() == "Windows":
-    RUN_PYTHON_COMMAND = META_DATA['settings']['windows']
+    RUN_PYTHON_COMMAND = *META_DATA['settings']['windows']
 elif platform.system() == "Darwin": # macOS
-    RUN_PYTHON_COMMAND = META_DATA['settings']['macOS']
+    RUN_PYTHON_COMMAND = *META_DATA['settings']['macOS']
 
 def main():
     for software in META_DATA['softwares']:
