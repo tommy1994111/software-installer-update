@@ -1,0 +1,14 @@
+{
+    "settings": {
+        "windows": ["py", "-3"],
+        "macOS": ["python3"]
+    },
+    "softwares": [
+        {
+            "name": "testSoftware",
+            "officialWebsite": "http://localhost",
+            "codePath": "testSoftware.py",
+            "downloadPath": ["portable"]
+        }
+    ]
+}
